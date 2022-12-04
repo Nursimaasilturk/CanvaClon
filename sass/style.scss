@@ -1,0 +1,236 @@
+@import "./variable.scss";
+
+//------MAİN PAGE--------///
+* {
+  @include mar-pad(0, 0);
+  font-family: $main-font;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+.a-custom {
+  color: $main-color;
+}
+.btn-custom {
+  background-color: $main-color;
+  border-radius: 0.3rem;
+  color: white;
+  padding: 0.7rem 1rem;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+body {
+  box-sizing: border-box !important;
+  height: 100% !important;
+  width: 100vw;
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5vw;
+    background-color: white;
+    @include display(flex, center, space-between);
+    flex-direction: row;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 0px 8px 0px;
+    &__logo {
+      margin-left: 1.6rem;
+      width: 6%;
+      cursor: pointer;
+      img {
+        width: 95%;
+        height: 45px !important;
+      }
+    }
+    &__categories ul {
+      @include display(flex, center, space-evenly);
+      flex-direction: row;
+      list-style: none;
+      li {
+        padding: 0.5rem 0.7rem;
+        font-size: 14px;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: black;
+          @include display(flex, center, center);
+          img {
+            margin: 4px 0 0 4px;
+          }
+        }
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+    }
+    &__searching-bar {
+      position: relative;
+      width: 27%;
+      i {
+        position: absolute;
+        left: 15px;
+        top: 25%;
+        font-size: 20px;
+      }
+      input {
+        width: 85%;
+        padding: 0.6rem;
+        padding-left: 40px;
+        outline: none;
+        border: 1px solid #d3d3d3;
+        border-radius: 0.3rem;
+        &:focus {
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        }
+      }
+    }
+
+    &__login-choices {
+      margin-right: 2rem;
+      .button-login {
+        width: 120px;
+        height: 40px;
+        border: none;
+        border-radius: 0.3rem;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      &--help {
+        width: 40px;
+        height: 40px;
+        border: none;
+        margin-right: 0.5rem;
+        background-color: white;
+        border-radius: 0.3rem;
+        cursor: pointer;
+        &:hover {
+          background-color: #f5f5f5;
+        }
+      }
+      &--sign-up {
+        color: white;
+        background-color: $main-color;
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+      &--sign-in {
+        background-color: #f5f5f5;
+        margin-right: 0.5rem;
+        transition: 0.2s ease-out;
+        &:hover {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+  main {
+    .hero {
+      @include display(flex, center, center);
+      flex-direction: column;
+      margin-top: 3rem;
+      &__top-text {
+        width: 100%;
+        margin: 5vw;
+        @include display(flex, center, center);
+        flex-direction: column;
+        &--question {
+          font-size: 2.7rem;
+          font-weight: bold;
+        }
+        &--text {
+          text-align: center;
+          width: 60%;
+          font-size: 1.4rem;
+          color: $light-text;
+        }
+      }
+      &__memberships {
+        @include display(flex, center, center);
+        flex-direction: column;
+        h2 {
+          font-size: 1.9rem;
+        }
+        &-container {
+          @include display(flex, center, center);
+          flex-direction: row;
+          &--card {
+            margin: 2rem;
+            width: 20vw;
+            height: 14vw;
+            @include display(flex, center, space-between);
+            flex-direction: column;
+            text-align: center;
+            .card {
+              &--header {
+                font-size: 1.3rem;
+                font-weight: 600;
+                i {
+                  margin-right: 0.7rem;
+                  color: gold;
+                }
+              }
+              &--content {
+                font-size: 0.85rem;
+                font-weight: 300;
+                line-height: 1.5em;
+              }
+              &--button {
+                width: 100%;
+                button {
+                  width: 100%;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+          }
+        }
+        &-description {
+          @include display(flex, center, center);
+          flex-direction: column;
+          p {
+            font-size: 0.85rem;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .design {
+      @include display(flex, center, center);
+      flex-direction: column;
+      &-item {
+        @include display(flex, center, space-between);
+        flex-direction: row;
+        width: 90%;
+        &__picture {
+          width: 50%;
+        }
+        &__content {
+          width: 43%;
+          &--header {
+            font-size: 1.9rem;
+          }
+          &--content {
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}

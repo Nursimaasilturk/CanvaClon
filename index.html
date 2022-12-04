@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canva</title>
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,300;1,500;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fontawsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="./images/canva logo.png" alt="" />
+      </div>
+      <nav class="header__categories">
+        <ul>
+          <li class="header__categories--item"><a href="#">Ana Sayfa</a></li>
+          <li class="header__categories--item">
+            <a href="#"
+              >Şablonlar <img src="./images/down-arrow.png" alt=""
+            /></a>
+          </li>
+          <li class="header__categories--item">
+            <a href="#"
+              >Kaynaklar <img src="./images/down-arrow.png" alt=""
+            /></a>
+          </li>
+          <li class="header__categories--item">
+            <a href="#"
+              >Üyelik Seçenekleri <img src="./images/down-arrow.png" alt=""
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__searching-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Logodan arşive kadar her şey!" />
+      </div>
+      <div class="header__login-choices">
+        <button class="header__login-choices--help">
+          <i class="fa-solid fa-question"></i>
+        </button>
+        <button class="header__login-choices--sign-in button-login">
+          Oturum Aç
+        </button>
+        <button class="header__login-choices--sign-up button-login">
+          Üye Ol
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero__top-text">
+          <h2 class="hero__top-text--question mb-2 mt-2">
+            Bugün ne tasarlayacaksınız ?
+          </h2>
+          <p class="hero__top-text--text mb-2">
+            Canva, profesyonel tasarımlar oluşturmayı, paylaşmayı ve bastırmayı
+            kolaylaştırır.
+          </p>
+          <button class="hero__top-text--button btn-custom mb-2">
+            Ücretsiz kaydol
+          </button>
+          <div class="hero__top-text--video">
+            <img src="./images/main-page-video.png" alt="" />
+          </div>
+        </div>
+        <div class="hero__memberships mt-2">
+          <h2 class="mt-2 mb-2">Herkes için mükemmel çözüm</h2>
+          <div class="hero__memberships-container mb-2">
+            <div class="hero__memberships-container--card">
+              <div class="card--header">Ücretsiz Canva</div>
+              <div class="card--content">
+                Kendi başına veya başkalarıyla birlikte tasarım yapmak isteyen
+                herkes için. Tasarım konusunda deneyimli olmanız gerekmez ve
+                sonsuza kadar ücretsizdir.
+              </div>
+              <div class="card--button">
+                <button class="btn-custom">Ücretsiz canvayı kullanın</button>
+              </div>
+            </div>
+            <div class="hero__memberships-container--card">
+              <div class="card--header">
+                <i class="fa-solid fa-crown"></i>Canva Pro
+              </div>
+              <div class="card--content">
+                Markanızı veya projenizi büyütmenize yardımcı olacak özel
+                araçlarla premium içeriğe sınırsız erişim isteyenler için.
+              </div>
+              <div class="card--button">
+                <button class="btn-custom">
+                  Ücretsiz Pro deneme sürümünüzü başlatın
+                </button>
+              </div>
+            </div>
+            <div class="hero__memberships-container--card">
+              <div class="card--header">
+                <i class="fa-solid fa-crown"></i>Ekipler için Canva
+              </div>
+              <div class="card--content">
+                Kendi başına veya başkalarıyla birlikte tasarım yapmak isteyen
+                herkes için. Tasarım konusunda deneyimli olmanız gerekmez ve
+                sonsuza kadar ücretsizdir.
+              </div>
+              <div class="card--button">
+                <button class="btn-custom">
+                  Ücretsiz Ekipler denemenizi başlatın
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hero__memberships-description">
+            <p class="mb-2">
+              <a href="#" class="a-custom">Eğitim kurumları</a> ve
+              <a href="#" class="a-custom">kâr amacı gütmeyen kuruluşlar</a> ,
+              premium Canva özelliklerinden ücretsiz olarak yararlanabilir.
+            </p>
+            <img src="./images/sponsor.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="design">
+        <div class="design-item">
+          <div class="design-item__picture">
+            <img src="./images/design-1.png" alt="" />
+          </div>
+          <div class="design-item__content">
+            <h1 class="design-item__content--header mb-1">Hazır Tasarımlar</h1>
+            <p class="design-item__content--content mb-1">
+              Yeni bir <a href="#" class="a-custom">kartvizite</a> mi
+              ihtiyacınız var? Bir sonraki
+              <a href="#" class="a-custom">videonuzu</a> mu düzenliyorsunuz?
+              Binlerce profesyonel şablon, görsel ve kaliteli içerikten
+              yararlanın.
+            </p>
+            <button class="btn-custom">Tasarım Oluşturun</button>
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-item__content ml-3">
+            <h1 class="design-item__content--header mb-1">
+              Ekip çalışması için geliştirildi
+            </h1>
+            <p class="design-item__content--content mb-1">
+              Başkalarını sizinle beraber tasarım yapmaya davet edebilir, hatta
+              isterseniz marka varlıklarını yönetmek,
+              <a href="#" class="a-custom">beyaz tahta</a> kullanarak beyin
+              fırtınası düzenlemek, onay almak ve
+              <a href="#" class="a-custom">belgeler</a> gibi araçları kullanarak
+              içeriğinizi düzenlemek için tüm ekibi bir araya getirebilirsiniz.
+            </p>
+            <button class="btn-custom">Birlikte Çalışın</button>
+          </div>
+          <div class="design-item__picture">
+            <img src="./images/design-2.png" alt="" />
+          </div>
+        </div>
+        <div class="design-item">
+          <div class="design-item__picture">
+            <img src="./images/design-3.png" alt="" />
+          </div>
+          <div class="design-item__content">
+            <h1 class="design-item__content--header mb-1">
+              Bu tasarımı herkes görmeli
+            </h1>
+            <p class="design-item__content--content mb-1">
+              Yeni bir <a href="#" class="a-custom">web sitesi</a> mi
+              kuruyorsunuz? Özel bir <a href="#" class="a-custom">afişe</a> mi
+              ihtiyacınız var? Tasarımlarınızla tüm dünyayı etkileyin:
+              Tasarımlarınızı kolayca sunun, indirin, planlayın ve paylaşın.
+              Ayrıca tasarımınızı bastırabilir ve kapınıza kadar teslim
+              edebiliriz.
+            </p>
+            <button class="btn-custom">Vizyonunuzu hayata geçirin</button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

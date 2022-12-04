@@ -1,0 +1,13 @@
+$main-font: "Montserrat", sans-serif;
+$main-color: #7a25da;
+$light-text: rgb(109, 109, 117);
+
+@mixin mar-pad($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+@mixin display($display, $align-items, $justify-content) {
+  display: $display;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
