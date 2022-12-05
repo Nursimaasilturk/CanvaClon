@@ -4,9 +4,15 @@
 * {
   @include mar-pad(0, 0);
   font-family: $main-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .mb-2 {
   margin-bottom: 2rem;
+}
+.mb-3 {
+  margin-bottom: 3rem;
 }
 .mt-2 {
   margin-top: 2rem;
@@ -15,13 +21,16 @@
   margin-bottom: 1rem;
 }
 .ml-3 {
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 .ml-1 {
   margin-left: 1rem;
 }
 .a-custom {
   color: $main-color;
+}
+.mh-custom {
+  font-size: 1.9rem;
 }
 .btn-custom {
   background-color: $main-color;
@@ -34,6 +43,7 @@
     opacity: 0.9;
   }
 }
+
 body {
   box-sizing: border-box !important;
   height: 100% !important;
@@ -41,7 +51,7 @@ body {
   .header {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 5vw;
     background-color: white;
     @include display(flex, center, space-between);
@@ -140,13 +150,14 @@ body {
     }
   }
   main {
+    width: 100vw;
     .hero {
       @include display(flex, center, center);
       flex-direction: column;
       margin-top: 3rem;
       &__top-text {
         width: 100%;
-        margin: 5vw;
+        margin-top: 4vw;
         @include display(flex, center, center);
         flex-direction: column;
         &--question {
@@ -163,9 +174,6 @@ body {
       &__memberships {
         @include display(flex, center, center);
         flex-direction: column;
-        h2 {
-          font-size: 1.9rem;
-        }
         &-container {
           @include display(flex, center, center);
           flex-direction: row;
@@ -224,9 +232,6 @@ body {
         }
         &__content {
           width: 43%;
-          &--header {
-            font-size: 1.9rem;
-          }
           &--content {
             font-size: 1rem;
             font-weight: 300;
@@ -235,10 +240,43 @@ body {
         }
       }
     }
+    .team {
+      width: 100vw;
+      @include display(flex, center, center);
+      flex-direction: column;
+      &__top-text {
+        text-align: center;
+        width: 44%;
+        p {
+          line-height: 1.7em;
+          color: $light-text;
+          padding: 0.5rem;
+        }
+      }
+      &__content {
+        width: 84%;
+        @include display(flex, flex-start, center);
+        &-text {
+          margin-top: 2rem;
+          margin-left: 2rem;
+          &--item {
+            width: 83%;
+            font-size: 0.9rem;
+            line-height: 1.5em;
+            @include display(flex, flex-start, center);
+            i,
+            span {
+              margin-right: 1rem;
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
   }
   footer {
     border-top: 1px solid rgb(217, 211, 211);
-    margin-bottom: 7vw !important;
+    margin-bottom: 6.5vw !important;
     @include display(flex, center, center);
     flex-direction: column;
     .categories {
@@ -264,12 +302,75 @@ body {
       border-top: 1px solid rgb(217, 211, 211);
       margin-top: 3rem;
     }
+    .policy {
+      width: 96%;
+      height: 3vw;
+      margin: 2rem 1rem 1rem 1rem;
+      @include display(flex, center, space-between);
+      &__language {
+        margin-top: 1rem;
+        &--button {
+          @include display(flex, center, center);
+          padding: 0.5rem 1rem;
+          border: 1px solid rgb(217, 211, 211);
+          border-radius: 0.3rem;
+          font-size: 0.9rem;
+          cursor: pointer;
+          &:hover {
+            border: 1px solid rgb(161, 159, 159);
+          }
+          span {
+            margin-right: 0.5rem;
+          }
+          img {
+            margin-left: 0.5rem;
+          }
+        }
+      }
+      &__text {
+        font-size: 0.9rem;
+        color: $light-text;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: $light-text;
+          transition: 0.4s ease-in;
+          &:hover {
+            color: $main-color;
+          }
+        }
+      }
+      &__social-media {
+        a {
+          margin: 0.3rem;
+        }
+        i {
+          font-size: 1.3rem;
+        }
+        .fa-facebook {
+          color: #4267b2;
+        }
+        .fa-twitter {
+          color: #1da1f2;
+        }
+        .fa-pinterest {
+          color: #e60023;
+        }
+        .fa-instagram {
+          color: linear-gradient(
+            to right,
+            rgb(187, 143, 143),
+            rgb(160, 160, 228)
+          ) !important;
+        }
+      }
+    }
   }
   .popup {
     background-color: white;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 5vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     @include display(flex, center, space-around);

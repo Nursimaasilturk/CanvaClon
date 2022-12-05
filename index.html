@@ -10,11 +10,23 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500;600;700&family=Josefin+Sans:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,500;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,300;1,500;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
     <!--Fontawsome-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0.0/css/font-awesome-ie7.css"
+      integrity="sha512-yuZVHfLYhzrtt7FIl8rRWbS3Ej1QHP2DIGmfqEO+To6MEeGoZIAPfzstE8swf120X58vischMnqIfGVECaO8eQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -79,7 +91,7 @@
           </div>
         </div>
         <div class="hero__memberships mt-2">
-          <h2 class="mt-2 mb-2">Herkes için mükemmel çözüm</h2>
+          <h2 class="mt-2 mb-2 mh-custom">Herkes için mükemmel çözüm</h2>
           <div class="hero__memberships-container mb-2">
             <div class="hero__memberships-container--card">
               <div class="card--header">Ücretsiz Canva</div>
@@ -138,7 +150,9 @@
             <img src="./images/design-1.png" alt="" />
           </div>
           <div class="design-item__content">
-            <h1 class="design-item__content--header mb-1">Hazır Tasarımlar</h1>
+            <h1 class="design-item__content--header mb-1 mh-custom">
+              Hazır Tasarımlar
+            </h1>
             <p class="design-item__content--content mb-1">
               Yeni bir <a href="#" class="a-custom">kartvizite</a> mi
               ihtiyacınız var? Bir sonraki
@@ -151,7 +165,7 @@
         </div>
         <div class="design-item">
           <div class="design-item__content ml-3">
-            <h1 class="design-item__content--header mb-1">
+            <h1 class="design-item__content--header mb-1 mh-custom">
               Ekip çalışması için geliştirildi
             </h1>
             <p class="design-item__content--content mb-1">
@@ -173,9 +187,9 @@
             <img src="./images/design-3.png" alt="" />
           </div>
           <div class="design-item__content">
-            <h1 class="design-item__content--header mb-1">
+            <h2 class="design-item__content--header mb-1 mh-custom">
               Bu tasarımı herkes görmeli
-            </h1>
+            </h2>
             <p class="design-item__content--content mb-1">
               Yeni bir <a href="#" class="a-custom">web sitesi</a> mi
               kuruyorsunuz? Özel bir <a href="#" class="a-custom">afişe</a> mi
@@ -186,6 +200,55 @@
             </p>
             <button class="btn-custom">Vizyonunuzu hayata geçirin</button>
           </div>
+        </div>
+      </section>
+      <section class="team mt-2 mb-2">
+        <div class="team__top-text mb-2">
+          <h2 class="mh-custom mb-2">
+            Ekibinizle birlikte en iyi tasarımınıza imza atın
+          </h2>
+          <p>
+            Her ölçekten ekibin üretmesini ve işbirliği yapmasını kolaylaştıran
+            hepsi bir arada çözümümüz Ekipler için Canva planını deneyin.
+          </p>
+        </div>
+        <div class="team__content mb-3">
+          <div class="team__content-text">
+            <div class="team__content-text--item mb-3">
+              <i class="fa-regular fa-folder"></i>
+              <p>
+                <strong>Ekip klasörleri</strong> ile işlerinizi düzenli tutun,
+                marka varlıklarınızı depolayın ve içeriklerinizi yönetin
+              </p>
+            </div>
+            <div class="team__content-text--item mb-3">
+              <span class="material-symbols-outlined"> phone_iphone </span>
+              <p>
+                Sosyal medya gönderilerinizi doğrudan Canva üzerinde
+                <strong>oluşturun, planlayın ve yayınlayın</strong>
+              </p>
+            </div>
+            <div class="team__content-text--item mb-3">
+              <span class="material-symbols-outlined"> group_add </span>
+              <p>
+                Ülkeler, şirketler ve departmanlar arası
+                <strong>gerçek zamanlı iş birliği</strong> yapın
+              </p>
+            </div>
+            <div class="team__content-text--item mb-3">
+              <i class="fa-regular fa-comment"></i>
+              <p>
+                <strong> Yerleşik yorumlar</strong> ile gerçek zamanlı iletişim
+                kurun, çalışmanızı sürekli geliştirin ve önerileri değerlendirin
+              </p>
+            </div>
+          </div>
+          <div class="team__content-pic">
+            <img src="./images/team.png" alt="" />
+          </div>
+        </div>
+        <div class="team__button">
+          <button class="btn-custom">Ekipler İçin Canva Planını Deneyin</button>
         </div>
       </section>
     </main>
@@ -263,9 +326,29 @@
       </div>
       <hr />
       <div class="policy">
-        <div class="policy__language"></div>
-        <div class="policy__text"></div>
-        <div class="policy__social-media"></div>
+        <div class="policy__language">
+          <div class="policy__language--modal"></div>
+          <div class="policy__language--button">
+            <span class="material-symbols-outlined"> language </span>
+            Türkçe(Türkiye) <img src="./images/down-arrow.png" alt="" />
+          </div>
+        </div>
+        <div class="policy__text">
+          <p class="mb-1">
+            &copy; 2022 Tüm Hakları Saklıdır, Canva<sup>&reg;</sup>
+          </p>
+          <p><a href="#">Gizlilik Politikası</a> | <a href="#">Koşullar</a></p>
+        </div>
+        <div class="policy__social-media">
+          <a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#" class="pinterest"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+          <a href="#" class="instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </footer>
     <div class="popup">
