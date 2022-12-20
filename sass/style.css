@@ -2,8 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -17,6 +15,10 @@
 
 .mt-2 {
   margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
 }
 
 .mb-1 {
@@ -52,12 +54,12 @@
 }
 
 body {
-  box-sizing: border-box !important;
   height: 100% !important;
   width: 100vw;
 }
 body .header {
   position: fixed;
+  z-index: 999;
   top: 0;
   width: 100vw;
   height: 5vw;
@@ -163,7 +165,7 @@ body .header__login-choices--sign-in:hover {
   background-color: #f0f0f0;
 }
 body main {
-  width: 100vw;
+  width: 100%;
 }
 body main .hero {
   display: flex;
@@ -189,6 +191,12 @@ body main .hero__top-text--text {
   width: 60%;
   font-size: 1.4rem;
   color: rgb(109, 109, 117);
+}
+body main .hero__top-text--video {
+  width: 80%;
+}
+body main .hero__top-text--video img {
+  width: 100%;
 }
 body main .hero__memberships {
   display: flex;
@@ -244,6 +252,9 @@ body main .hero__memberships-description p {
   font-size: 0.85rem;
   font-weight: 300;
 }
+body main .hero__memberships-description img {
+  width: 90%;
+}
 body main .design {
   display: flex;
   align-items: center;
@@ -260,6 +271,9 @@ body main .design-item {
 body main .design-item__picture {
   width: 50%;
 }
+body main .design-item__picture img {
+  width: 100% !important;
+}
 body main .design-item__content {
   width: 43%;
 }
@@ -269,7 +283,7 @@ body main .design-item__content--content {
   line-height: 1.5em;
 }
 body main .team {
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -306,6 +320,83 @@ body main .team__content-text--item i,
 body main .team__content-text--item span {
   margin-right: 1rem;
   font-size: 1.5rem;
+}
+body main .team__content-pic {
+  width: 70%;
+}
+body main .team__content-pic img {
+  width: 100%;
+}
+body main .slider-part {
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body main .slider-part .slider-header {
+  text-align: center;
+}
+body main .slider-part .slider {
+  width: 98vw;
+  height: 25em;
+  position: relative;
+  padding: 1.5rem;
+  overflow: hidden;
+}
+body main .slider-part .slider .slide {
+  position: absolute;
+  width: 100%;
+  max-width: 330px !important;
+  transition: transform 1s;
+  padding: 0.5rem;
+}
+body main .slider-part .slider .slide__picture {
+  width: 95%;
+  height: 15rem;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body main .slider-part .slider .slide__picture img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+body main .slider-part .slider .slide__picture img:hover {
+  width: 110% !important;
+  height: 110%;
+}
+body main .slider-part .slider .slide__header {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.4em;
+}
+body main .slider-part .slider .slide__content {
+  font-size: 11px;
+  line-height: 1.5em;
+  color: #615f63;
+}
+body main .slider-part .slider__button-right, body main .slider-part .slider__button-left {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgb(109, 109, 117);
+  background-color: #f5f5f5;
+  top: 40%;
+  cursor: pointer;
+}
+body main .slider-part .slider__button-left {
+  left: 5px;
+}
+body main .slider-part .slider__button-right {
+  right: 5px;
 }
 body footer {
   border-top: 1px solid rgb(217, 211, 211);
