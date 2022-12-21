@@ -31,3 +31,11 @@ const prevSlide = function () {
 };
 rightSlideBtn.addEventListener("click", nextSlide);
 leftSlideBtn.addEventListener("click", prevSlide);
+///////
+var templates = [
+  {
+    img: "",
+    header: "Sosyal Media",
+    contents: ["Instagram Story", "Instagram Post"],
+  },
+];
