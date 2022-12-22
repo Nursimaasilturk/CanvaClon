@@ -77,6 +77,7 @@ body {
         list-style: none;
         margin: 0;
         li {
+          position: relative;
           padding: 0.5rem 0.7rem;
           font-size: 14px;
           border-radius: 0.3rem;
@@ -536,6 +537,49 @@ body {
       transition: 0.2s ease-out;
       &:hover {
         background-color: #f0f0f0;
+      }
+    }
+  }
+}
+/// Dynamic Modal CSS Codes
+.modal {
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 99999999;
+  top: 110%;
+  left: -100%;
+  @include display(flex, flex-start, center);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  &-item {
+    @include display(flex, flex-start, center);
+    flex-direction: column;
+
+    padding: 0.5rem;
+    &__img {
+      width: 170px;
+      height: 100px;
+      border-radius: 0.5rem;
+    }
+    &__header {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    &__contents {
+      width: 100%;
+      @include display(flex, flex-start !important, center !important);
+      flex-direction: column !important;
+      padding: 0;
+      &--item {
+        width: 100%;
+        padding: 0.3rem !important;
+        font-weight: 300;
+        &:hover {
+          background-color: #f0f0f0;
+        }
       }
     }
   }

@@ -95,6 +95,7 @@ body .header__categories ul {
   margin: 0;
 }
 body .header__categories ul li {
+  position: relative;
   padding: 0.5rem 0.7rem;
   font-size: 14px;
   border-radius: 0.3rem;
@@ -579,5 +580,53 @@ body .popup .first {
   transition: 0.2s ease-out;
 }
 body .popup .first:hover {
+  background-color: #f0f0f0;
+}
+
+.modal {
+  width: auto;
+  height: auto;
+  position: absolute;
+  z-index: 99999999;
+  top: 110%;
+  left: -100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.modal-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+.modal-item__img {
+  width: 170px;
+  height: 100px;
+  border-radius: 0.5rem;
+}
+.modal-item__header {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.modal-item__contents {
+  width: 100%;
+  display: flex;
+  align-items: flex-start !important;
+  justify-content: center !important;
+  flex-direction: column !important;
+  padding: 0;
+}
+.modal-item__contents--item {
+  width: 100%;
+  padding: 0.3rem !important;
+  font-weight: 300;
+}
+.modal-item__contents--item:hover {
   background-color: #f0f0f0;
 }/*# sourceMappingURL=style.css.map */
